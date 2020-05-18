@@ -18,7 +18,7 @@ public class TestController {
     @RequestMapping(value = "/get/{id}",method = RequestMethod.GET)
     public TestEntity test(@PathVariable Integer id){
         System.out.println("id:" + id);
-        System.out.println(testService.getById(id));
+        System.out.println(testService.getById(id).toString());
         return testService.getById(id);
     }
  
